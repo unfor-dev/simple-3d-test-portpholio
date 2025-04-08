@@ -1,0 +1,62 @@
+/* GLOBAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+h1{
+  margin: 0;
+}
+h2{
+  margin: 0;
+}
+
+h3{
+  margin: 0;
+}
+h4{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+button{
+  color: var(--white-color);
+}
+hr{
+  margin: 0;
+}
+svg{
+  display: block;
+}
