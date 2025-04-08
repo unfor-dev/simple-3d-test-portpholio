@@ -5,7 +5,7 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 769px) {
     width: 100%;
   }
 `;
