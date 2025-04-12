@@ -128,6 +128,13 @@ const Img = styled.img`
   position: absolute;
   top: 0;
   left: 0;
+  animation: animate 2s infinite ease alternate;
+
+  @keyframes animate {
+    to {
+      transform: translateY(20px);
+    }
+  }
 `;
 
 const Hero = () => {
