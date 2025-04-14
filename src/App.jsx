@@ -1,4 +1,5 @@
 import './index.css'
+import './normalize.css'
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Who from "./components/Who";
