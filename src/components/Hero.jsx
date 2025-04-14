@@ -1,4 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Hero = () => {
   return(
@@ -27,13 +29,29 @@ const Hero = () => {
       <div className="hero-intro-info-wrapper">
         <h1>Think. Make. <br /> Solve.</h1>
         <div className="hero-info">
-          <h3>What we Do</h3>
+          <h2>What we Do</h2>
           <p>we enjoy creating delightful, human-centered digital experiences.</p>
         </div>
         <a className="button" href="#">Learn More</a>
       </div>
 
-      <div className="hero-animate-section-wrapper">
+        <div className="hero-animate-section-wrapper">
+            <Canvas>
+              <Suspense fallback={null}>
+                <OrbitControls enableZoom={false} />
+                <ambientLight intensity={0.2} />
+                <directionalLight position={[3, 1, 1]} />
+                <Sphere args={[1, 100, 200]} scale={2.3}>
+                  <MeshDistortMaterial
+                    color="#4165dd"
+                    attach="material"
+                    distort={0.4}
+                    speed={1.4}
+                  />
+                </Sphere>
+              </Suspense>
+            </Canvas>
+
         <img src="img/moonN.png" alt="Hero img" width="700" height="500" />
       </div>
 
