@@ -79,11 +79,11 @@ body {
   padding: 0;
   margin: 0;
   font-family:"Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 28px;
   background-color: rgb(15, 36, 79);
-  background: url("./img/bgN.jpg") right center no-repeat;
+  /* background: url("./img/bgN.jpg") right center no-repeat; */
   background-attachment: fixed;
   background-size: cover;
   color: var(--white-color);
@@ -150,13 +150,14 @@ select:-webkit-autofill:focus {
 .container::-webkit-scrollbar {
   display: none;
 }
-
-
+.Hero{
+  scroll-snap-align: center;
+  height: 100vh;
+}
 
 /* Nav Start */
 .site-hero-wrapper{
   margin-top: 10px;
-  scroll-snap-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -178,24 +179,78 @@ select:-webkit-autofill:focus {
 
 .site-nav-list li{
   margin-right: 20px;
+  font-size: 16px;
 }
 .hero-left-wrapper{
   display: flex;
   align-items: center;
 }
-.hero-left-wrapper img{
-  margin-right: 20px;
-  cursor: pointer;
-}
-.hero-left-wrapper a{
+.button{
   width: 100px;
-  padding: 10px;
-  background-color: #da4ea2;
+  text-align: center;
+  padding: 8px;
+  background-color: #b93885;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
+}
+/* Nav End */
+
+/* Hero Start */
+.hero-section-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-intro-info-wrapper{
+  width: 450px;
+}
+.hero-intro-info-wrapper h1{
+  margin: 0;
+  font-size: 74px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.hero-info h3{
+  color: #da4ea2;
+  margin-bottom: 5px;
+}
+.hero-info p{
+  font-size: 22px;
+  color: #d3d3d3;
+  margin-bottom: 15px;
+}
+.hero-animate-section-wrapper{
+  height: 840px;
+  width: 670px;
+  position: relative;
+}
+/* Img animate */
+.hero-animate-section-wrapper img {
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: animate 2s infinite ease alternate;
+}
+@media only screen and (max-width: 768px) {
+  .hero-animate-section-wrapper img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
-/* Nav End */
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+/* Img animate end */
+
+
+/* Hero End */
