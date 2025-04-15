@@ -335,12 +335,12 @@ select:-webkit-autofill:focus {
 .contact-wrapper h1{
   font-weight: 200;
 }
-/* .contact-message{
+.contact-message{
   padding: 20px 20px 65px 20px;
   background-color: #e8e6e6;
   border: none;
   border-radius: 5px;
-} */
+}
 .contact-name, .contact-email{
   padding: 20px;
   background-color: #e8e6e6;
