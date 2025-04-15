@@ -82,8 +82,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 28px;
-  background-color: rgb(15, 36, 79);
-  /* background: url("./img/bgN.jpg") right center no-repeat; */
+  background: url("./img/image.png") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: var(--white-color);
@@ -157,7 +156,7 @@ select:-webkit-autofill:focus {
 }
 .nav-wrapper ul{
   display: flex;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 520px) {
     display: none;
   }
 }
@@ -174,7 +173,7 @@ select:-webkit-autofill:focus {
   width: 100px;
   text-align: center;
   padding: 8px;
-  background-color: #b9abff;
+  background-color: #3e2c99;
   color: white;
   border: none;
   border-radius: 5px;
@@ -190,7 +189,7 @@ select:-webkit-autofill:focus {
   justify-content: space-between;
 }
 .hero-intro-info-wrapper{
-  width: 450px;
+  width: 440px;
 }
 .hero-intro-info-wrapper h1{
   margin: 0;
@@ -223,6 +222,7 @@ select:-webkit-autofill:focus {
   margin: auto;
   animation: animate 2s infinite ease alternate;
 }
+
 @media only screen and (max-width: 768px) {
   .hero-animate-section-wrapper img {
     width: 400px;
@@ -245,6 +245,7 @@ select:-webkit-autofill:focus {
   align-items: center;
   justify-content: space-between;
   margin-top: 80px;
+  margin-bottom: 150px;
 }
 .about-section-wrapper{
   display: flex;
@@ -274,6 +275,86 @@ select:-webkit-autofill:focus {
   width: 670px;
   position: relative;
 }
-
-
 /* About End */
+
+/* Works Start */
+.Works{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+  margin-bottom: 70px;
+}
+.product-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.product-list li {
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+}
+
+.product-list li::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #4f39bc;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.5s linear;
+}
+
+.product-list li:hover::after {
+  width: 100%;
+}
+
+/* Works End */
+
+/* Contact Start */
+.Contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+.contact-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 450px;
+}
+.contact-wrapper h1{
+  font-weight: 200;
+}
+/* .contact-message{
+  padding: 20px 20px 65px 20px;
+  background-color: #e8e6e6;
+  border: none;
+  border-radius: 5px;
+} */
+.contact-name, .contact-email{
+  padding: 20px;
+  background-color: #e8e6e6;
+  border: none;
+  border-radius: 5px;
+}
+.contact-button{
+  width: 100%;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Contact End */ 
