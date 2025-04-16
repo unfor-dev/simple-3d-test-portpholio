@@ -14,7 +14,6 @@ export default function Contact() {
         </form>
       </div>
 
-
       <div className="contact-section-places">
         <Map className="map" />
       </div>
