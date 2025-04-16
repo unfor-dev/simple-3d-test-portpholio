@@ -356,5 +356,13 @@ select:-webkit-autofill:focus {
   border-radius: 5px;
   padding: 20px;
 }
+.contact-section-places{
+  width: 800px;
+  height: 450px;
+}
+.contact-location-name{
+  font-size: 30px;
+  font-weight: bold;
+}
 
 /* Contact End */ 

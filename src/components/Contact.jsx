@@ -1,18 +1,22 @@
 import React from "react";
+import Map from "./Map";
 
 export default function Contact() {
   return (
     <div className="Contact">
       <div className="contact-wrapper">
         <h1>Contact Us</h1>
-        <input className="contact-name" type="text" placeholder="Name" />  
-        <input className="contact-email" type="email" placeholder="Email" />  
-        <input className="contact-message" type="text" placeholder="Write your message" />  
-        <button type="submit" className="button contact-button" href="#">Send</button>
+        <form className="contact-wrapper">
+          <input className="contact-name" type="text" placeholder="Name" required/>  
+          <input className="contact-email" type="email" placeholder="Email" required/>  
+          <textarea className="contact-message" type="text" placeholder="Write your message" required/>  
+          <button type="submit" className="button contact-button" href="#">Send</button>
+        </form>
       </div>
 
+
       <div className="contact-section-places">
-        <h1>Canvas</h1>
+        <Map className="map" />
       </div>
     </div>
   );
