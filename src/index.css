@@ -194,10 +194,7 @@ select:-webkit-autofill:focus {
 .hero-section-wrapper{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.hero-intro-info-wrapper{
-  width: 440px;
+  justify-content: space-around;
 }
 .hero-intro-info-wrapper h1{
   margin: 0;
@@ -215,7 +212,7 @@ select:-webkit-autofill:focus {
   margin-bottom: 15px;
 }
 .hero-animate-section-wrapper{
-  height: 840px;
+  height: 800px;
   width: 670px;
   position: relative;
 }
@@ -251,9 +248,11 @@ select:-webkit-autofill:focus {
 .About{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 80px;
-  margin-bottom: 150px;
+  justify-content: space-around;
+  height: 80vh;
+}
+.about-section-canvas{
+  height: 80vh;
 }
 .about-section-wrapper{
   display: flex;
