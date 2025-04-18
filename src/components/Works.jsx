@@ -1,6 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Development from "./Development-model";
+import WebDesign from "./WebDesign-model";
 
 export default function Works() {
+  const [work, setWork] = useState();
   useEffect(() => {
     document.querySelectorAll(".product-list li").forEach((item) => {
       item.setAttribute("data-text", item.textContent.trim());
@@ -19,7 +22,11 @@ export default function Works() {
         </div>
 
         <div className="product-wrapper">
-          <h1>Canvas</h1>
+          {work === "Web Design" ? (
+            <WebDesign />
+          ) : (
+            <Development />
+          )}
         </div>
       </div>
   );
