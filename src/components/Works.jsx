@@ -1,30 +1,34 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Development from "./Development-model";
 import WebDesign from "./WebDesign-model";
 import ProductDesign from "./ProductDesign-model";
 import Illustration from "./Illustration-model";
 
 export default function Works() {
-  const [work, setWork] = useState("Web Design"); // Boshlang'ich holat
+  const [work, setWork] = useState("Web Design");
 
-  useEffect(() => {
-    document.querySelectorAll(".product-list li").forEach((item) => {
-      item.setAttribute("data-text", item.textContent.trim());
-      item.addEventListener("click", () => {
-        setWork(item.textContent.trim()); // 📌 Bu joy muhim!
-      });
-    });
-  }, []);
+  const workList = [
+    "Web Design",
+    "Development",
+    "Illustration",
+    "Product Design",
+    "Social Media",
+  ];
 
   return (
-    <div className="Works">
+    <div className="Works" id="Works">
       <div className="product-name-wrapper">
         <ul className="product-list">
-          <li>Web Design</li>
-          <li>Development</li>
-          <li>Illustration</li>
-          <li>Product Design</li>
-          <li>Social Media</li>
+          {workList.map((item) => (
+            <li
+              key={item}
+              data-text={item}
+              onClick={() => setWork(item)}
+              className={work === item ? "active" : ""}
+            >
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -35,10 +39,10 @@ export default function Works() {
           <Development />
         ) : work === "Product Design" ? (
           <ProductDesign />
-        ): work === "Illustration" ? (
+        ) : work === "Illustration" ? (
           <Illustration />
         ) : (
-          <p>Some thing have in there )</p>
+          <p>Something is coming soon</p>
         )}
       </div>
     </div>

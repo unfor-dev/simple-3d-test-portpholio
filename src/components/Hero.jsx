@@ -12,15 +12,15 @@ const Hero = () => {
         <nav className="nav-wrapper">
           <ul className="site-nav-list">
             <li><a className="site-nav-link" href="#">Home</a></li>
-            <li><a className="site-nav-link" href="#">Studio</a></li>
-            <li><a className="site-nav-link" href="#">Works</a></li>
-            <li><a className="site-nav-link" href="#">Contact</a></li>
+            <li><a className="site-nav-link" href="#About">Studio</a></li>
+            <li><a className="site-nav-link" href="#Works">Works</a></li>
+            <li><a className="site-nav-link" href="#Contact">Contact</a></li>
           </ul>
         </nav>
       </div>
 
       <div className="hero-left-wrapper">
-        <a className="button" href="#">Contact us</a>
+        <a className="button" href="#Contact">Contact us</a>
       </div>
     </div>
     {/* Nav end */}
@@ -32,7 +32,7 @@ const Hero = () => {
           <h2>What we Do</h2>
           <p>we enjoy creating delightful, human-centered digital experiences.</p>
         </div>
-        <a className="button" href="#">Learn More</a>
+        <a className="button" href="#Works">Learn More</a>
       </div>
 
         <div className="hero-animate-section-wrapper">

@@ -5,7 +5,7 @@ import Cube from "./cube";
 
 export default function About() {
   return (
-    <div className="About">
+    <div className="About" id="About">
 
           <div className="about-section-canvas">
             <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
@@ -25,7 +25,7 @@ export default function About() {
             <h2>Who we Are</h2>
             <p>a creative group of designers and developers with a passion for the arts.</p>
           </div>
-          <a className="button" href="#">See our Works</a>
+          <a className="button" href="#Contact">See our Works</a>
         </div>
         </div>  
     </div>

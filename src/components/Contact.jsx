@@ -3,7 +3,7 @@ import Map from "./Map";
 
 export default function Contact() {
   return (
-    <div className="Contact">
+    <div className="Contact" id="Contact">
       <div className="contact-wrapper">
         <h1>Contact Us</h1>
         <form className="contact-wrapper">
