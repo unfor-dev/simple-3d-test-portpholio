@@ -14,10 +14,6 @@ const WebDesign = () => {
           <OrbitControls enableZoom={false} autoRotate />
         </Suspense>
       </Canvas>
-      <p>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
-      </p>
     </>
   );
 };

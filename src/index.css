@@ -248,11 +248,12 @@ select:-webkit-autofill:focus {
 .About{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 80vh;
 }
 .about-section-canvas{
   height: 80vh;
+  width: auto;
 }
 .about-section-wrapper{
   display: flex;
@@ -289,8 +290,13 @@ select:-webkit-autofill:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70vh;
   margin-bottom: 70px;
+  position: relative;
+}
+.product-wrapper{
+  display: flex;
+  height: 70vh;
+  align-items: center;
 }
 .product-list{
   display: flex;
@@ -322,7 +328,9 @@ select:-webkit-autofill:focus {
 .product-list li:hover::after {
   width: 100%;
 }
-
+.product-wrapper{
+  width: 450px;
+}
 /* Works End */
 
 /* Contact Start */
